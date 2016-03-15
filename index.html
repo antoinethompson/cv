@@ -1,40 +1,94 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
 	<title>Curriculum Vitae</title>
 </head>
-<img src="gueule.png" />
+
 <body>
-	<h1>Curriculum Vitae Thompson Antoine</h1>
-	<h2>Formation académique</h2>
-	<h3>2016 :</h3>
-	<p>Diplôme universitaire informatique 2ème année IUT Calais</p>
-	<h3>2015 :</h3>
-	<p>Diplôme universitaire informatique 1ère année IUT Calais</p>
-	<h3>2014 :</h3>
-	<p>Baccalauréat scientifique, spécialité informatique, mention Assez Bien Lycée Pierre de Coubertin</p>
-	<h2>Compétences informatiques</h2>
-	<ul>
-		<li>Java : Réalisation d'un Cnady Crush</li>
-		<li>HTML/CSS : Plusieurs sites</li>
-		<li>Mysql/PLPGSQL</li>
-		<li>JavaScript : Projet Démineur</li>
-		<li>PHP : projets/sites</li>
-		<li>C : Divers petits programmes (Calculatrice etc...)</li>
-	</ul>
-	<h2>Caractéristiques personnelles</h2>
-	<ul>
-		<li>Dynamique</li>
-		<li>Sérieux</li>
-		<li>Responsable</li>
-		<li>Méthodique</li>
-	</ul>
-	<h2>Loisirs et champs d'intérêt</h2>
-	<ul>
-		<li>Pratique du basket-ball pendant 7 ans,Coquelles</li>
-		<li>Intérêt pour les nouvelles technologies, 7ème art</li>
-		<li>Programmation(Java,C,Java Script...)</li>
-	</ul>
+	<div class="row">
+		<div class="col-lg-5 col-lg-offset-3">
+			<h1>Curriculum Vitae Thompson Antoine</h1>
+		</div>
+		<div class="col-lg-offset-8">
+			<img src="img/gueule.png" width="100px" height="125px" />
+		</div>
+		
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 col-lg-offset-2">
+			<h2>Formation académique</h2>
+			<h3>2016 :</h3>
+			<p>Diplôme universitaire informatique 2ème année IUT Calais</p>
+			<h3>2015 :</h3>
+			<p>Diplôme universitaire informatique 1ère année IUT Calais</p>
+			<h3>2014 :</h3>
+			<p>Baccalauréat scientifique, spécialité informatique, mention Assez Bien Lycée Pierre de Coubertin</p>
+	    </div>
+	    <div class="col-lg-5 col-lg-offset-1">
+	    <h2>Compétences informatiques</h2>
+			<ul>
+				<li>Java : Réalisation d'un Cnady Crush</li>
+				<li>HTML/CSS : Plusieurs sites</li>
+				<li>Mysql/PLPGSQL</li>
+				<li>JavaScript : Projet Démineur</li>
+				<li>PHP : projets/sites</li>
+				<li>C : Divers petits programmes (Calculatrice etc...)</li>
+			</ul>
+		</div>
+	</div>
+	<div class="col-lg-offset-2">
+		<h2>Caractéristiques personnelles</h2>
+	</div>
+	<div class="row">
+			<ul>
+				<div class="col-lg-4 col-lg-offset-2">
+					<li>Dynamique</li>
+					<li>Sérieux</li>
+				</div>
+				<div class="col-lg-5 col-lg-offset-1">	
+					<li>Responsable</li>
+					<li>Méthodique</li>
+				</div>
+			</ul>
+	</div>
+	<div class="col-lg-7 col-lg-offset-2">
+	  	<ul class="nav nav-tabs" role="tablist">
+	    	<li role="presentation" class="active"><a href="#sport" aria-controls="sport" role="tab" data-toggle="tab">Sport</a></li>
+   			<li role="presentation"><a href="#techno" aria-controls="techno" role="tab" data-toggle="tab">Technologies</a></li>
+	    	<li role="presentation"><a href="#prog" aria-controls="prog" role="tab" data-toggle="tab">Programmation</a></li>
+	    	<li role="presentation"><a href="#cinema" aria-controls="cinema" role="tab" data-toggle="tab">7ème art</a></li>
+	  </ul>
+	  <div class="tab-content">
+	    	<div role="tabpanel" class="tab-pane active" id="sport">
+	    		<p>J'ai pratiqué le basket-ball pendant 7 ans, à Coquelles.Ce sport m'a appris le dépassement de soit ainsi que le travail d'équipe mais également l'invidualisme, mais aussi savoir faire des choix rapidement et efficacement.
+	    		</p>
+	    	
+	    	</div>
+	    	<div role="tabpanel" class="tab-pane" id="techno">
+	   	 		<p>La technologie est une partie de l'univers qui est sans cesse en progression, de quoi assouvir ma soif de curiosité.</p>
+	    	</div>
+	    	<div role="tabpanel" class="tab-pane" id="prog">
+	    		<div class="row">
+	    			<div class="col-lg-3">
+		    			<img src="img/prog.jpg" width="250px" height="150px" />
+		    		</div>
+		    		<div>
+		    			<p>La découverte de la programmationn s'est faite à travers le monde du jeu vidéo. J'ai codé mon premier jeu "Démineur" en javascript.</p>
+		  	    	</div>
+		  	   	</div>
+	  	    </div>
+	  	    <div role="tabpanel" class="tab-pane" id="cinema">
+	    		<p>Le cinéma est un univers qui nous permet de nous évader selon les types de films, puis un bon film avec du pop-corn ca n'a pas de prix.</p>
+	  	    </div>
+  	  </div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="javascript.js"></script>
 </body>
 </html>
